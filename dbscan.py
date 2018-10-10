@@ -84,7 +84,6 @@ def dbscan(X, eps, minpts):
 
     return [cluster_idx, core_point_idx]
 
-
 def plot_dbscan(X, db):
     core_samples_mask = np.zeros_like(np.array(db[0]), dtype=bool)
     core_samples_mask[db[1]] = True
