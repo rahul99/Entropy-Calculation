@@ -36,3 +36,10 @@ We can use clustering based methods of discretize the continuous location values
 * `python driver.py --data-path ./data/2012-035-FA_samples/2012-035-FA_samples.csv --data-type continuous`
 
 Above implementation supports approximation based entropy. Gaussian based entropy is also straightforward and therefore not implemented in the current setting
+
+### Note on DBScan Clustering
+DBScan will need tuning to get appropriate distribution. the `eps` value and the `density` can be tuned by visual verification. I found that `eps = 0.015` and `density=3` gives clusters locations accoriding to their vicinity. Following plot shows the distribution:
+
+![alt text](https://github.com/rahul99/Entropy-Calculation/blob/master/location%20distribution.png)
+
+
