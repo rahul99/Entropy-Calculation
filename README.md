@@ -19,7 +19,8 @@ Please install the required packages mentioned in the requirements.txt file.
 We use publicly available [ZipCode dataset](https://catalog.data.gov/dataset/zip-codes-zipcodes). The dataset contains two attributes for location information: (i) Zipcode, and (ii)Country. Entropy is evaluated for each of the attibutes.
 
 ### Running instructions
-Arguments for Discrete Data are included in the driver script as default. Please run `python driver.py`.
+* `cd` to the project directory
+* Run `python driver.py`. Arguments for Discrete Data are included in the driver script as default.
 
 ## Entropy for Continuous Data
 We use publicly available [Field Activity Data](https://cmgds.marine.usgs.gov/data/field-activity-data/2012-035-FA/). The dataset contains geo cordinates (latitudes and longitudes). Since the coordiates are continuous, there are a couple of ways to solve to determine the entropy
@@ -31,6 +32,7 @@ Following the central limit theorem, we can assume the geo cordinates to be dist
 We can use clustering based methods of discretize the continuous location values. Choosing a suitable clustering method is important, for example for K-means, there is an unknown parameter k to estimate. For location attributes, DBScan seems to be an appropriate choice. My implementation of DBScan is available in `dbscan.py`. Note that there might more sophisticated implementations available on the web.
 
 ### Running Instructions
-`python driver.py --data-path ./data/2012-035-FA_samples/2012-035-FA_samples.csv --data-type continuous`
+* `cd` to the project directory
+* `python driver.py --data-path ./data/2012-035-FA_samples/2012-035-FA_samples.csv --data-type continuous`
 
 Above implementation supports approximation based entropy. Gaussian based entropy is also straightforward and therefore not implemented in the current setting
