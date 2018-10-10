@@ -12,7 +12,7 @@ Please install the required packages mentioned in the requirements.txt file.
 * In addition, python-tk is required in case you want to plot the output of DBScan which may be the case for continuous data. To install, please run the following command `sudo apt-get install python-tk`
 
 ## Input Arguments
-* `data-path`: data-path to the input data
+* `data-path`: path to the input data
 * `data-type`: mode of the data (`continuous` or `discrete`)
 
 ## Entropy for Discrete Data
@@ -25,4 +25,4 @@ Arguments for Discrete Data are included in the driver script as default. Please
 We use publicly available [Field Activity Data](https://cmgds.marine.usgs.gov/data/field-activity-data/2012-035-FA/). The dataset contains geo cordinates (latitudes and longitudes). Since the coordiates are continuous, there are a couple of ways to solve to determine the entropy
 
 ### Assuming a Gaussian Distribution
-Following the central limit theorem, we can assume the geo cordinates to be distributed normally. In this case, we can estimate the mean vector <a href="https://www.codecogs.com/eqnedit.php?latex=$\in&space;R^2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\in&space;R^2$" title="$\in R^2$" /></a>
+Following the central limit theorem, we can assume the geo cordinates to be distributed normally. In this case, we can estimate the mean vector <a href="https://www.codecogs.com/eqnedit.php?latex=$\in&space;R^2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\in&space;R^2$" title="$\in R^2$" /></a> and the covariance matrix <a href="https://www.codecogs.com/eqnedit.php?latex=$\in&space;R^2&space;\times&space;R^2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\in&space;R^2&space;\times&space;R^2$" title="$\in R^2 \times R^2$" /></a> to determine the join Gaussian distribution <a href="https://www.codecogs.com/eqnedit.php?latex=\[&space;X&space;\sim&space;\mathcal{N}(\mu,\,\sigma^{2})\,&space;\]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\[&space;X&space;\sim&space;\mathcal{N}(\mu,\,\sigma^{2})\,&space;\]" title="\[ X \sim \mathcal{N}(\mu,\,\sigma^{2})\, \]" /></a> of the location X:
