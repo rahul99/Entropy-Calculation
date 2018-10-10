@@ -1,5 +1,5 @@
 # Entropy-Calculation
-Entropy Calculation for a given attribute of a dataset.
+Entropy Calculation for a given attribute of a dataset (Please check `Entropy_Calculation.pdf` for details on experimental findings)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=E&space;=&space;-&space;\sum_{i=1}^{n}&space;\left(&space;p_i&space;*&space;log_2(p_i)&space;\right)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E&space;=&space;-&space;\sum_{i=1}^{n}&space;\left(&space;p_i&space;*&space;log_2(p_i)&space;\right)" title="E = - \sum_{i=1}^{n} \left( p_i * log_2(p_i) \right)" /></a>
 
