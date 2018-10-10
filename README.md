@@ -3,9 +3,9 @@ Entropy Calculation for a given dataset. Both discrete and continuous data are s
 
 ## Requirements
 Please install the required packages mentioned in the requirements.txt file. 
-* pip install -r requirements.txt
+* `pip install -r requirements.txt`
 
-* In addition, python-tk is required in case you want to plot the output of DBScan which may be the case for continuous data. Please run the following command to install `sudo apt-get install python-tk`
+* In addition, python-tk is required in case you want to plot the output of DBScan which may be the case for continuous data. To install, please run the following command `sudo apt-get install python-tk`
 
 ## Input Arguments
 * `data-path`: data-path to the input data
